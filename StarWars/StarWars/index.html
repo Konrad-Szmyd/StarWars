@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.21/css/jquery.dataTables.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="toolbar">
+            <div class="logo">
+                <img src="assets/img/startWarsLogo.png" class="imgLogo" width="100px" height="100px" alt="">
+            </div>
+            <div class="buttons">
+            </div>
+        </div>
+        <div class="baner">
+            <div class="dataModule">
+                <div class="InpuAndTable">
+
+                    <div class="inputs">
+                        <div class="tableInput">
+                            <label class="colorWhiteFont" for="howMany">How many results</label>
+
+                            <select name="howMany" id="howMany">
+                                <option value="10">10</option>
+                                <option value="20">20</option>
+                                <option value="30">30</option>
+                            </select>
+                        </div>
+                        <div class="searchDiv">
+                            <div class="search">
+                                <div class="colorWhiteFont" id="search">Search</div>
+                                <input class="inputSearch" type="text">
+                            </div>
+                            <div class="searchURL">
+                                <button class="searchURLButton">Search</button>
+                            </div>
+                        </div>
+                        <div class="delete">
+                            <button class="buttonDelete">Delete</button>
+                        </div>
+                    </div>
+
+                    <div class="table">
+                        <table class="tab">
+                            <thead>
+                                <tr>
+                                    <th class="thClass1">Lp</th>
+                                    <th class="thClass2"></th>
+                                    <th class="thClass3"></th>
+                                    <th class="thClass4"></th>
+                                    <th class="thClass5"></th>
+                                    <th class="thClass6">Created</th>
+                                    <th class="thClass7">Option</th>
+                                </tr>
+                            </thead>
+                            <tbody class="tableBody">
+
+                            </tbody>
+                        </table>
+                        <div class="bottomTable">
+                            <div class="pagin">
+
+                            </div>
+                            <div class="jumpTo">
+                                <div class="colorWhiteFont marginRight" id="jump">Jump</div>
+                                <input class="jumpSearch" type="text">
+                            </div>
+
+                        </div>
+                        
+                    </div>
+
+                    <div class="reviev">
+                        <h2>Reviev</h2>
+                        <div class="revicContent"></div>
+                        <button class="revievClose">Close</button>
+                    </div>
+                    
+                    <div class="newsButtonDiv">
+                        <button class="newsButton">Do You knew ?</button>
+                    </div>
+                    <div class="peopleNews">
+                        <h2>Do You knew ?</h2>
+                        <div class="peopleNewsHighest">
+
+                        </div>
+                        <button class="newsClose">Close</button>
+                    </div>
+                    <div class="newsButtonDivPlanets">
+                        <button class="newsPlanetButton">Do You knew ?</button>
+                    </div>
+                    <div class="planetsNews">
+                        <h2>Do You knew ?</h2>
+                        <div class="planetsNewsHighest">
+
+                        </div>
+                        <button class="newsPlanetsClose">Close</button>
+                    </div>
+                </div>
+                <div class="extraSpecies">
+                    <div class="speciesDiv">
+                        <label for="speciesInput">Rase</label>
+                        <input id="speciesInput" class="speciesInput" type="text">
+                    </div>
+                    <div class="speciesDiv">
+                        <label for="speciesInput2">Your height</label>
+                        <input id="speciesInput2" class="speciesInput2" type="text">
+                    </div>
+                    <div class="speciesDiv">
+                        <button class="count">Count</button>
+                    </div>
+                    <div class="speciesDiv">
+                        <div class="speciesResults"></div>
+                    </div>
+                </div>
+                <div class="extraVehicles">
+                    <div class="vehiclesDiv">
+                        <label for="vehiclesInput">Model</label>
+                        <input id="vehiclesInput" class="vehiclesInput" type="text">
+                    </div>
+                    <div class="vehiclesDiv">
+                        <label for="vehiclesInput2">Passengers</label>
+                        <input id="vehiclesInput2" class="vehiclesInput2" type="text">
+                    </div>
+                    <div class="vehiclesDiv">
+                        <button class="check2">Check</button>
+                    </div>
+                    <div class="vehiclesDiv">
+                        <div class="vehiclesResults"></div>
+                    </div>
+                </div>
+                <div class="extraStarships">
+                    <div class="StarshipsDiv">
+                        <label for="StarshipsInput">Model</label>
+                        <input id="StarshipsInput" class="StarshipsInput" type="text">
+                    </div>
+                    <div class="StarshipsDiv">
+                        <label for="StarshipsInput2">Cargo capacity</label>
+                        <input id="StarshipsInput2" class="StarshipsInput2" type="text">
+                    </div>
+                    <div class="StarshipsDiv">
+                        <button class="checkLoad">Check</button>
+                    </div>
+                    <div class="StarshipsDiv">
+                        <div class="StarshipsResults"></div>
+                    </div>
+                </div>
+                
+                <div class="deleteModal">
+                    <h2>Are you sure</h2>
+                    <div class="modalButtons">
+
+                    </div>
+                </div>
+
+            </div>
+            <div class="details">
+                <h2>Details</h2>
+                <div class="content">
+
+                </div>
+                <div class="closeDetails">
+                    <button class="close">Zamknij</button>
+                </div>
+            </div>
+        </div>
+
+    </header>
+    
+    <div class="hided">
+        <div class="geeks">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+    <audio id="myAudio">
+        <source src="./assets/audio/starAudio.mp3" type="audio/mpeg">
+    </audio>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" charset="utf8"
+        src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.js"></script>
+    <script src="./script.js"></script>
+
+</body>
+
+</html>
